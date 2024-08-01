@@ -3,7 +3,6 @@ getRecipeBtn.onclick = onRandomRecipe;
 
 //  declaration
 const container = document.querySelector(".recipe-container");
-const recipeImage = document.querySelector(".recipe-image");
 
 // api url
 const url = "https://www.themealdb.com/api/json/v1/1/random.php";
