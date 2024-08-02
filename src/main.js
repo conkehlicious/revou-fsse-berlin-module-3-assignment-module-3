@@ -16,15 +16,17 @@ async function onRandomRecipe() {
 
     // html styling
     document.body.style.backgroundColor = "black";
-    container.style.width = "700px";
+    container.style.width = "350px";
     container.style.padding = "10px";
     container.style.minHeight = "500px";
 
     // display random recipe
     container.innerHTML = ` 
     <h1>${data.meals[0].strMeal}</h1>
-    <h3>${data.meals[0].strCategory}</h3>
-    <p>${data.meals[0].strInstructions} </p>
+    <h3>CATEGORY : ${data.meals[0].strCategory}</h3>
+    <h3>ORIGIN COUNTRY : ${data.meals[0].strArea}</h3>
+    <h3 style = "color : red">INSTRUCTION :</h3>
+    <p> ${data.meals[0].strInstructions} </p>
     <img style = "width : 200px " src = ${data.meals[0].strMealThumb}>
     `;
   } catch (error) {}
