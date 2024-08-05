@@ -15,7 +15,7 @@ async function onRandomRecipe() {
     const data = await response.json();
     // console.log(data);
 
-    // ini adalah fungsi loop untuk ingredients
+    // loop function for ingredients
     const meal = data.meals[0];
     // console.log(meal);
     const ingredientss = [];
