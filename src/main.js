@@ -36,7 +36,7 @@ async function onRandomRecipe() {
 
     // display random recipe
     container.innerHTML = ` 
-    <h2>${data.meals[0].strMeal}</h2>
+    <h2 style =  "border : 2px blue solid">${data.meals[0].strMeal}</h2>
     <h3>CATEGORY : ${data.meals[0].strCategory}</h3>
     <h3>ORIGIN COUNTRY : ${data.meals[0].strArea}</h3>
     <h3 style = "color : red">INSTRUCTION :</h3>
