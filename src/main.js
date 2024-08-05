@@ -46,7 +46,6 @@ async function onRandomRecipe() {
     ingredientText.innerHTML = `<ol>${ingredientss
       .map((ingredientss) => `<li>${ingredientss}</li>`)
       .join("")}</ol>`;
-    country.textContent = `country :${data.meals[0].strArea}`;
     console.log(ingredientss);
   } catch (error) {}
 }
